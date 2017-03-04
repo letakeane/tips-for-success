@@ -1,0 +1,44 @@
+/*TYPOGRAPHY*/
+h1 {
+  font-family: 'Abril Fatface', serif;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+}
+
+/*ELEMENTS*/
+.slideshow {}
+
+.tips {}
+
+.numbertext {}
+
+.slideshow-images {}
+
+img {}
+
+.arrow {
+  height: 30px;
+  width: 30px;
+}
+
+.prev {
+  background: url() no-repeat;
+  background-size: cover;
+}
+
+.prev:hover {
+  background: url() no-repeat;
+  background-size: cover;
+}
+
+.next {}
+
+.next:hover {}
+
+.slideshow-indicators {}
+
+.indicator {}
+
+.indicator:hover {}
