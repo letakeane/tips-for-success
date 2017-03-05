@@ -1,44 +1,190 @@
+body {
+}
+
 /*TYPOGRAPHY*/
+h1, h2, h3, p {
+  font-family: 'Oswald', sans-serif;
+  font-size: 50px;
+  color: #4A4E65;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 0;
+}
+
 h1 {
-  font-family: 'Abril Fatface', serif;
+  margin: 20px;
+}
+
+h2 {
+  font-size: 35px;
+  font-weight: 400;
+  text-align: left;
+}
+
+h3 {
+  font-size: 35px;
+  line-height: 120%;
+  margin-bottom: 20px;
 }
 
 p {
-  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+a {
+  font-family: 'Oswald', sans-serif;
+  color: #555b9b;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #a8afff;
 }
 
 /*ELEMENTS*/
-.slideshow {}
-
-.tips {}
-
-.numbertext {}
-
-.slideshow-images {}
-
-img {}
-
-.arrow {
-  height: 30px;
-  width: 30px;
+nav {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  margin: auto;
 }
 
-.prev {
-  background: url() no-repeat;
+.tips-container {
+  width: 75%;
+  margin: 50px auto;
+}
+
+.tip {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 30px 0;
+}
+
+.tip-title {
+  width: 25%;
+}
+
+.of-ten-text {
+  font-size: 20px;
+  font-weight: 200;
+  color: #787FA4;
+}
+
+.tip-text {
+  width: 50%;
+}
+
+.arrow-up {
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+  height: 100px;
+  width: 100px;
+  background: url(images/up.svg) no-repeat;
+  background-size: cover;
+  float: right;
+}
+
+.arrow-up:hover {
+  background: url(images/up-hover.svg) no-repeat;
   background-size: cover;
 }
 
-.prev:hover {
-  background: url() no-repeat;
-  background-size: cover;
+.hacky-spacer {
+  height: 500px;
 }
 
-.next {}
 
-.next:hover {}
 
-.slideshow-indicators {}
 
-.indicator {}
+@media screen and (max-width: 900px) {
+  .tips-container {
+    width: 90%;
+  }
 
-.indicator:hover {}
+  .tip-text {
+    width: 60%;
+  }
+
+  .arrow-up {
+    right: 20px;
+  }
+
+  .hacky-spacer {
+    height: 350px;
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  nav {
+    width: 80%;
+  }
+
+  .tips-container {
+    width: 95%;
+  }
+
+  .tip-title {
+    width: 15%;
+  }
+
+  .tip-text {
+    width: 70%;
+  }
+
+  .arrow-up {
+    height: 50px;
+    width: 50px;
+    right: 20px;
+  }
+
+  .hacky-spacer {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h2 {
+    text-align: center;
+  }
+
+  .tip {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tip-title {
+    width: 100%;
+  }
+
+  .hacky-spacer {
+    height: 230px;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  p {
+    font-size: 16px;
+  }
+
+  .tips-container {
+    margin: 0;
+  }
+
+  .tip-text {
+    width: 85%;
+  }
+
+  .arrow-up {
+    height: 35px;
+    width: 35px;
+    right: 5px;
+    bottom: 20px;
+  }
+}
