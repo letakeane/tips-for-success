@@ -1,8 +1,13 @@
-body {
-}
+body {}
+
 
 /*TYPOGRAPHY*/
-h1, h2, h3, p {
+
+h1,
+h2,
+h3,
+h5,
+p {
   font-family: 'Oswald', sans-serif;
   font-size: 50px;
   color: #4A4E65;
@@ -12,7 +17,7 @@ h1, h2, h3, p {
 }
 
 h1 {
-  margin: 20px;
+  margin: 10px auto 0;
 }
 
 h2 {
@@ -25,6 +30,11 @@ h3 {
   font-size: 35px;
   line-height: 120%;
   margin-bottom: 20px;
+}
+
+h5 {
+  font-size: 25px;
+  margin-bottom: 10px;
 }
 
 p {
@@ -44,7 +54,9 @@ a:hover {
   color: #a8afff;
 }
 
+
 /*ELEMENTS*/
+
 nav {
   display: flex;
   width: 50%;
@@ -98,51 +110,39 @@ nav {
   height: 500px;
 }
 
-
-
-
 @media screen and (max-width: 900px) {
   .tips-container {
     width: 90%;
   }
-
   .tip-text {
     width: 60%;
   }
-
   .arrow-up {
     right: 20px;
   }
-
   .hacky-spacer {
     height: 350px;
   }
 }
 
-
 @media screen and (max-width: 700px) {
   nav {
     width: 80%;
   }
-
   .tips-container {
     width: 95%;
   }
-
   .tip-title {
     width: 15%;
   }
-
   .tip-text {
     width: 70%;
   }
-
   .arrow-up {
     height: 50px;
     width: 50px;
     right: 20px;
   }
-
   .hacky-spacer {
     height: 350px;
   }
@@ -152,35 +152,28 @@ nav {
   h2 {
     text-align: center;
   }
-
   .tip {
     flex-direction: column;
     align-items: center;
   }
-
   .tip-title {
     width: 100%;
   }
-
   .hacky-spacer {
     height: 230px;
   }
 }
 
-
 @media screen and (max-width: 400px) {
   p {
     font-size: 16px;
   }
-
   .tips-container {
     margin: 0;
   }
-
   .tip-text {
     width: 85%;
   }
-
   .arrow-up {
     height: 35px;
     width: 35px;
